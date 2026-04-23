@@ -41,17 +41,20 @@ Run `bash scripts/bootstrap.sh` to verify your environment.
 # 1. Clone and set up
 git clone https://github.com/tawhetsell/pdf-remediation-tool
 cd pdf-remediation-tool
-bash setup.sh
-bash scripts/bootstrap.sh
+bash setup.sh          # creates workspace folder structure (run once)
+bash scripts/bootstrap.sh  # verifies Java, Python, and dependencies
 
 # 2. Drop source PDFs into originals/
 cp ~/Downloads/my_lecture.pdf originals/
 
-# 3. In Claude Code, run the skill
-/remediate my_lecture.pdf 03_Policy_Theory
+# 3. Run the skill from your AI agent
+/remediate my_lecture.pdf policy_theory
 ```
 
-Claude will classify the file, run the appropriate pipeline, ask for a canonical name, and stage the result to `work/canvas_ready/03_Policy_Theory/`.
+Your agent will classify the file, run the appropriate pipeline, ask for a canonical name, and stage the result to `work/canvas_ready/policy_theory/`.
+
+**Claude Code:** `/remediate` is available as a slash command automatically.  
+**Codex:** the skill is at `.agents/skills/remediate/SKILL.md` and loads automatically.
 
 ## Pipeline
 
