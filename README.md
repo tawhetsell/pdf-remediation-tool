@@ -17,7 +17,7 @@ Contributions and adaptations from other instructors and instructional designers
 - Organizes remediated files by Canvas module with clean canonical names
 - Tracks Ally scores in `STATUS.md`
 
-The primary interface is a Claude Code slash command: `/remediate`.
+**AI interface:** Works with Claude Code via the `/remediate` slash command, or with ChatGPT (and other OpenAI-compatible agents) via `AGENTS.md` — both load the same workflow from `AGENT_INSTRUCTIONS.md`. Claude Code users get a single command; ChatGPT users follow the same steps interactively.
 
 ## Prerequisites
 
@@ -39,7 +39,7 @@ Run `bash scripts/bootstrap.sh` to verify your environment.
 
 ```bash
 # 1. Clone and set up
-git clone <repo-url>
+git clone https://github.com/tawhetsell/pdf-remediation-tool
 cd pdf-remediation-tool
 bash setup.sh
 bash scripts/bootstrap.sh
