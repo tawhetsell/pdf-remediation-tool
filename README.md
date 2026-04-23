@@ -25,7 +25,7 @@ Contributions and adaptations from other instructors and instructional designers
 - Java 11+ (for `opendataloader-pdf`)
   - macOS: `brew install openjdk@17`
   - Windows: install any JDK 11+ and ensure `java` is on your PATH
-- `pip install --upgrade opendataloader-pdf pypdf`
+- `pip install --upgrade opendataloader-pdf pypdf` ([opendataloader-pdf](https://github.com/opendataloader-project/opendataloader-pdf), [pypdf](https://github.com/py-pdf/pypdf))
 - `ocrmypdf` (optional, for scanned files)
   - macOS: `brew install ocrmypdf`
   - Windows: install [Tesseract](https://github.com/UB-Mannheim/tesseract/wiki) then `pip install ocrmypdf`
