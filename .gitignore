@@ -1,0 +1,26 @@
+# PDFs — never commit source or processed files
+*.pdf
+*.PDF
+
+# Work outputs
+work/inputs/
+work/tagged/
+work/patched/
+work/runs/
+work/canvas_ready/
+
+# Keep placeholder files
+!**/.gitkeep
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Credentials — never commit
+.env
+*.key
+*.secret
