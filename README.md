@@ -23,6 +23,8 @@ Contributions and adaptations from other instructors and instructional designers
 
 ## Prerequisites
 
+- **AI agent** — [Claude Code](https://claude.ai/code) or [OpenAI Codex](https://developers.openai.com/codex/quickstart)
+  - Codex: `npm install -g @openai/codex` or `brew install --cask codex`
 - Python 3.10+
 - Java 11+ (for `opendataloader-pdf`)
   - macOS: `brew install openjdk@17`
