@@ -55,7 +55,7 @@ fi
 
 # --- Required workspace directories ---
 # Refuse to run from wrong CWD. The top-level shape is what the runbook assumes.
-for d in originals work scripts docs; do
+for d in originals work scripts; do
     [ -d "$d" ] || fail "Expected directory '$d' missing. Run from workspace root, or run setup.sh."
 done
 ok "Workspace layout correct"
