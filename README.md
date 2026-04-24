@@ -60,6 +60,24 @@ Your agent will classify the file, run the appropriate pipeline, ask for a canon
 **Claude Code:** `/remediate` is available as a slash command automatically.  
 **Codex:** the skill is at `.agents/skills/remediate/SKILL.md` and loads automatically.
 
+## Manual use (no AI agent)
+
+The pipeline is plain Python and bash — no AI agent required. Technical users can run each step directly:
+
+```bash
+bash scripts/bootstrap.sh
+python3 scripts/classify_pdfs.py originals/<file>.pdf
+cp originals/<file>.pdf work/inputs/
+python3 scripts/run_priority_zero.py \
+  --materials work/inputs \
+  --tagged-dir work/tagged \
+  --out work/patched \
+  --reports work/runs/$(date +%F)_manual \
+  --targets <file>.pdf
+```
+
+See `AGENT_INSTRUCTIONS.md` for the full step-by-step workflow including OCR fallbacks and staging.
+
 ## Pipeline
 
 ```
