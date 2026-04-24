@@ -37,6 +37,8 @@ Contributions and adaptations from other instructors and instructional designers
 
 **Platform:** macOS and Linux natively. Windows via Git Bash with Java on PATH.
 
+**First time on Mac?** See [docs/mac-setup.md](docs/mac-setup.md) for a full walkthrough.
+
 Run `bash scripts/bootstrap.sh` to verify your environment.
 
 ## Quick start
