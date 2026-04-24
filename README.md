@@ -8,6 +8,8 @@ While developed and validated against Canvas/Ally scoring, the pipeline is LMS-a
 
 Contributions and adaptations from other instructors and instructional designers are welcome. If you're working on a similar problem at your institution, open an issue or pull request.
 
+> **Disclaimer:** Files produced by this pipeline are accessibility candidates, not certified-compliant documents. Users are responsible for verifying compliance with their institution's requirements. This tool is provided as-is with no warranty — see [LICENSE](LICENSE).
+
 ## What it does
 
 - Classifies PDFs (born-digital, scanned, phantom-tree)
@@ -86,6 +88,8 @@ If `opendataloader-pdf` produces a phantom tree (structure shell, no marked cont
 
 ## File naming convention
 
+The pipeline asks you for a canonical filename at staging time — use whatever convention works for your institution or course. One example system:
+
 | Type | Pattern | Example |
 |---|---|---|
 | Lecture slide | `descriptive_topic.pdf` | `market_failures.pdf` |
@@ -94,7 +98,7 @@ If `opendataloader-pdf` produces a phantom tree (structure shell, no marked cont
 | Policy document | descriptive | `omb_circular_a94.pdf` |
 | Example / exercise | `example_description.pdf` | `example_woodstock_cra.pdf` |
 
-All lowercase, underscores, no week-number prefixes.
+Whatever system you use, consistency within a course makes Canvas module management easier.
 
 ## What this tool does and does not do
 
@@ -116,4 +120,8 @@ A screen reader spot-check is the fastest real-world test:
 ## Built with
 
 This repository was developed with assistance from Claude Code (Opus 4.7, Sonnet 4.6) and ChatGPT 5.4.
+
+## License
+
+Licensed under [GPL v3](LICENSE). Free for academic and personal use. Commercial use requires a separate license — open an issue to discuss.
 

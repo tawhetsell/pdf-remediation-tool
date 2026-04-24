@@ -96,17 +96,7 @@ Read the summary. Confirm BDC > 0. Note the count:
 
 ### 5 — Canonical name
 
-Ask the human for the canonical filename following the convention in `AGENTS.md`:
-
-| File type | Pattern | Example |
-|---|---|---|
-| Lecture slide | `descriptive_topic.pdf` | `market_failures.pdf` |
-| Textbook chapter | `lastname_ch##.pdf` | `weimer_ch08.pdf` |
-| Author-year reading | `lastname_year.pdf` | `shields_2017.pdf` |
-| Policy document | descriptive | `omb_circular_a94.pdf` |
-| Example / exercise | `example_description.pdf` | `example_decision_making.pdf` |
-
-Rules: all lowercase, underscores only, no week prefix (order may change).
+Ask the human what they want to name the file. Remind them: all lowercase, underscores instead of spaces, `.pdf` extension. If they have no preference, suggest a descriptive name based on the document content.
 
 ---
 
